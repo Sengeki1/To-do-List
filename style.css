@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background:
+    url('https://cdn.wallpapersafari.com/27/34/lmMd0N.jpg');
+    background-size: cover;
+    padding: 20px;
+}
+
+.title {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.title h2 {
+    color: #002765;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: lightskyblue;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#btn {
+    float: right;
+    background-color: white;
+    color: black
+}
+
+#btn:hover {
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: 3px lightskyblue;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 16px 50px;
+    transition: 200ms ease-in-out;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    background-image:
+    url('https://upload.wikimedia.org/wikipedia/foundation/thumb/6/6b/Ooui-checkbox.svg/1024px-Ooui-checkbox.svg.png');
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 15px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image:
+    url('https://www.nicepng.com/png/detail/443-4439064_blue-check-mark-icon-png-check-mark-circle.png');
+    height: 50%;
+    width: 23px;
+    top: 11px;
+    left: 16.5px;
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    color: #555;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
